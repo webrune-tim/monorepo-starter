@@ -1,24 +1,18 @@
 # Simple Monorepo Starter
 
----
+This is a simple monorepo starter for a project that has multiple packages. It uses [PnPm](https://pnpm.io/) for efficiency and speed
 
-#### This is a simple monorepo starter for a project that has multiple packages. It uses [PnPm](https://pnpm.io/) for efficiency and speed
-
-#### The code came mainly from Scott Tolinski's [Monorepos with Pnpm Course](https://leveluptutorials.com/tutorials/monorepos-with-pnpm) on monorepos
+The code came mainly from Scott Tolinski's [Monorepos with Pnpm Course](https://leveluptutorials.com/tutorials/monorepos-with-pnpm) on monorepos
 
 ---
 
 ## How to use
 
-```bash
-  # Clone the repo
+1) Click the green "Use this template" button above to create a new repo from this template
+2) Name your new monorepo
+3) Enjoy!
 
-  gh repo clone timscodebase/monorepo-starter your-project-name
-  cd your-project-name
-  pnpm install
-```
-
-## Scripts
+### Scripts
 
 ```json
   "scripts": {
@@ -36,7 +30,7 @@
 - `update:all` - recursively updates all dependencies for all packages
 - `clean` - removes all `node_modules` folders
 
-## How to add a new package
+### How to add new dependencies
 
 ```bash
   # Add a new package
@@ -45,3 +39,11 @@
   # Add a new dependency to the main package (the root package) - rarely needed
   pnpm add -w just-kebab-case
 ```
+
+### How to add a new package
+
+Simply create a new folder in the `packages` folder and add run `pnpm init` in that folder.
+
+1) Create a new folder in the `packages` folder
+2) Run `pnpm init` in that folder
+3) Optionally, duplicate `start:second` in the root `package.json` and change the name to the new package
