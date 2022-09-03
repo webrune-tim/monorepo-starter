@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:main": "pnpm -F @timsmith/main start",
-    "start:second": "pnpm -F @timsmith/second start",
+    "start:main": "pnpm -F @project-name/main start",
+    "start:second": "pnpm -F @project-name/second start",
     "start": "pnpm -r start",
     "update:all": "pnpm -r update -i -L",
     "clean": "find ./ -name node_modules -type d -exec rm -rf {} +"
