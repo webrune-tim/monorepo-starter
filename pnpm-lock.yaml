@@ -1,0 +1,33 @@
+lockfileVersion: 5.4
+
+importers:
+
+  .:
+    specifiers:
+      just-kebab-case: ^4.1.1
+    dependencies:
+      just-kebab-case: 4.1.1
+
+  packages/main:
+    specifiers:
+      '@timsmith/second': workspace:*
+      just-snake-case: 3.1.1
+    dependencies:
+      '@timsmith/second': link:../second
+      just-snake-case: 3.1.1
+
+  packages/second:
+    specifiers:
+      just-snake-case: 3.1.1
+    dependencies:
+      just-snake-case: 3.1.1
+
+packages:
+
+  /just-kebab-case/4.1.1:
+    resolution: {integrity: sha512-2cssQ+98pufD1ifjlz64SkXbeySNgkx76/fjpQyhD3D4iAya+mWoHxqKp2U/Sn6r3DNsZ1GdbIBV6IClAG66GA==}
+    dev: false
+
+  /just-snake-case/3.1.1:
+    resolution: {integrity: sha512-nH+huMC8MANJ0oaR+ZXjssvoMUcEfMhp8g0D2H/db/BxA8GaR9VtQ5oodJ0ijfM4C8lmno+is6r3ifSMGGU1bg==}
+    dev: false
