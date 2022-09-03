@@ -2,7 +2,7 @@
 
 This is a simple monorepo starter for a project that has multiple packages. It uses [PnPm](https://pnpm.io/) for efficiency and speed
 
-The code came mainly from Scott Tolinski's [Monorepos with Pnpm Course](https://leveluptutorials.com/tutorials/monorepos-with-pnpm) on monorepos
+The code came mainly from Scott Tolinski's [Monorepos with Pnpm](https://leveluptutorials.com/tutorials/monorepos-with-pnpm) tutorial.
 
 ---
 
@@ -11,6 +11,8 @@ The code came mainly from Scott Tolinski's [Monorepos with Pnpm Course](https://
 1) Click the green "Use this template" button above to create a new repo from this template
 2) Name your new monorepo
 3) Enjoy!
+
+The `packages` folder is where you'll put your packages, duh. A package can be anything from a frontend framework to a backend framework to a library to a CLI tool. It's up to you!
 
 ### Scripts
 
@@ -34,7 +36,7 @@ The code came mainly from Scott Tolinski's [Monorepos with Pnpm Course](https://
 
 ```bash
   # Add a new package
-  pnpm -F @timsmith/second add just-snake-case@3.0.0
+  pnpm -F @project-name/second add just-snake-case@3.0.0
 
   # Add a new dependency to the main package (the root package) - rarely needed
   pnpm add -w just-kebab-case
